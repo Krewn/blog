@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="fits.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	</head>
+	<body onresize="windowResize()">
+		<div id = "background">
+			<img src="https://krewn.github.io/ApophysisOutPuts/Inf/infPostInv2.jpg" alt="bkg">
+		</div>
+		<div class = "navbar">
+			<div class="list-group">
+				<a class="button" href = "https://krewn.github.io">Home</a>
+				<a href="https://github.com/krewn" class="icon-link"><i class="fa fa-github fa-2x"></i></a>
+				<a href="https://www.linkedin.com/in/kevin-nelson-0a499980" class="icon-link"><i class="fa fa-linkedin fa-2x"></i></a>
+				<a href="https://www.facebook.com/Kevinb867" class="icon-link"><i class="fa fa-facebook fa-2x"></i></a>
+				<a href="https://twitter.com/freelancephilos" class="icon-link"><i class="fa fa-twitter fa-2x"></i></a>
+				<a href="https://krewn.github.io/Reprogramming" class="icon-link"><i class="fa fa-asterisk fa-2x"></i></a>
+			</div>
+		</div>
+		<div class="pageContent">
+			<div class = "indent">
+				<a><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2'><span style="background-color:#ffffff;font-size:23pt;font-style:italic;color:#1d2129;font-weight:700">Our:</span><span style="background-color:#ffffff;font-size:10.5pt;color:#1d2129"><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'>The world is consumed by imaginary garbage. Slavery persists except now the masters cannot see the slaves. Sickness is still pain except now it comes with debt, and in too many cases prescription that leads to or becomes addiction. While the internet makes information more available than ever the accreditation industry creates artificial barriers to people realizing their talents and dissuades individuals from pursuing knowledge sans the validation provided by a degree. Meanwhile the banks reap massive profits in all three cases, changing currencies across borders always for profit, providing people the financing required for a life saving operation or medication, always for profit, operating black box trading algorithms over the wire, usually for profit, and running a massive racket in the student loan space, always for profit.</span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2;height:11pt'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'>The truth is that money is not a measure of our contribution to society, it&#39;s a mechanism for advancing the same interests that have persisted throughout history, that being the domination of slaves by masters. Manual laborer is a euphemism chattel, possessed by wealth people in poverty are faced with little choice but to continue providing services to the wealthy.</span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2;height:11pt'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'>But that this all superfluous, grounded in nothing more than my own perception of the globalized economy. The core problem is much simpler. The wealthy doesn&#39;t need the service of the serfs. The aristocrats have the means to purchase through our economy everything they need to provide for themselves ( land ). The people who really need our service are the people who can&#39;t pay for it. Held in poverty by a cycle of debt that only makes the rich richer as the condition of poverty continues to worsen relative to the other half as the gap between grows wider and wider at a global and local scale. It seems to be exceedingly obvious that our system is inherently flawed.</span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2;height:11pt'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'>None the less many people unwilling to accept what I am saying will point to the technologies and ubiquitous material goods of modern society as a counterpoint. All material. Where we are given more capacity to communicate we isolate ourselves to increasingly restricted circles of like minded people, and reduce length of text we are willing to read. Where we have the technologies to cure previously terminal diseases we charge outlandish prices to exercising economic principles rather than ethical ones when determining the price of these cures. (Of course there is an argument to be had that the more money a pharmaceutical company makes the more medicines they can create, and that&#39;s worth addressing another time).</span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2;height:11pt'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'>The phone or computer you are reading this on was likely produced by people working in conditions that would not be legally permitted where it was sold to you. It&#39;s illegal to buy and sell cannabis flowers and yet most of us own a bevy of things that were produced under questionable labor conditions. Yet when we see people asking for help we often turn away.</span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2;height:11pt'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'>So what of material if we are becoming less empathetic? Not to say that we haven&#39;t rightfully expanded our boundaries of personhood in recent history, but at the same time we have allowed a tendency for poverty and homelessness to go unchecked as we excepted the restrictions from making homes of unoccupied land. Our unnatural designation of each parcel of land to it&#39;s given owner and the economic system around it creates as many problems as it solves.</span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2;height:11pt'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'>People don&#39;t need handouts, they need their fair share of the soft dirt and rain, and the only reason that feels like a hand out here and now is that over time colonizers have come to lay claim to everywhere, transforming the birthright of a person to be distinct from that of any other animal. We are no longer born into nature, to share are part of the world, today we are born into an economy to earn our place in it. Born to give money value.</span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2;height:11pt'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";line-height:1.15;orphans:2;widows:2'><span style='background-color:#ffffff;font-family:"Times New Roman";color:#1d2129'>So next time you think money gives a person value just come back and read this again, hopefully you will at least consider that it is the other way around.</span></p></a><br>
+			</div>
+		</div>
+		<script>
+			//start quote http://stackoverflow.com/questions/2481350/how-to-get-scrollbar-position-with-javascript
+			document.getScroll= function(){
+			 if(window.pageYOffset!= undefined){
+			  return [pageXOffset, pageYOffset];
+			 }
+			 else{
+			  let sx, sy, d= document, r= d.documentElement, b= d.body;
+			  sx= r.scrollLeft || b.scrollLeft || 0;
+			  sy= r.scrollTop || b.scrollTop || 0;
+			  return [sx, sy];
+			 }
+			}
+			//start quote http://stackoverflow.com/questions/1145850/how-to-get-height-of-entire-document-with-javascript
+			function docHeight(){
+				let body = document.body,
+				html = document.documentElement;
+				let height = Math.max( body.scrollHeight, body.offsetHeight, 
+				html.clientHeight, html.scrollHeight, html.offsetHeight );
+				return(height);
+			}
+			//start quote http://stackoverflow.com/questions/3437786/get-the-size-of-the-screen-current-web-page-and-browser-window
+			function wndsize(){
+			  let w = 0;var h = 0;
+			  //IE
+			  if(!window.innerWidth){
+			    if(!(document.documentElement.clientWidth == 0)){
+			      //strict mode
+			      w = document.documentElement.clientWidth;h = document.documentElement.clientHeight;
+			    } else{
+			      //quirks mode
+			      w = document.body.clientWidth;h = document.body.clientHeight;
+			    }
+			  } else {
+			    //w3c
+			    w = window.innerWidth;h = window.innerHeight;
+			  }
+			  return [w,h];
+			}
+			//end quote
+			let height = docHeight();
+			let windowHeight = wndsize()[1];			
+			let bg = document.getElementById('background');
+			function backgroundParallax(){
+				let pos = document.getScroll();
+				bg.style.top = String(parseInt((height-bg.clientHeight)*(pos[1]/(height-windowHeight)),10))+"px";
+				//alert(bg.clientHeight); //<-The height of the background
+				//alert(height);          //<-The height of the document
+				//alert(pos[1]);          //<-The height above the screen
+				//alert(windowHeight);    //<-The height of the window
+			}
+			function windowResize(){
+				bg.style.top = "0px";
+				windowHeight = wndsize()[1];
+				height = docHeight();
+				backgroundParallax();
+			}
+			window.onscroll = backgroundParallax;
+		</script>
+	</body>
+</html>

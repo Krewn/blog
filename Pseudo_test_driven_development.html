@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="fits.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	</head>
+	<body onresize="windowResize()">
+		<div id = "background">
+			<img src="https://krewn.github.io/ApophysisOutPuts/Inf/infPostInv2.jpg" alt="bkg">
+		</div>
+		<div class = "navbar">
+			<div class="list-group">
+				<a class="button" href = "https://krewn.github.io">Home</a>
+				<a href="https://github.com/krewn" class="icon-link"><i class="fa fa-github fa-2x"></i></a>
+				<a href="https://www.linkedin.com/in/kevin-nelson-0a499980" class="icon-link"><i class="fa fa-linkedin fa-2x"></i></a>
+				<a href="https://www.facebook.com/Kevinb867" class="icon-link"><i class="fa fa-facebook fa-2x"></i></a>
+				<a href="https://twitter.com/freelancephilos" class="icon-link"><i class="fa fa-twitter fa-2x"></i></a>
+				<a href="https://krewn.github.io/Reprogramming" class="icon-link"><i class="fa fa-asterisk fa-2x"></i></a>
+			</div>
+		</div>
+		<div class="pageContent">
+			<div class = "indent">
+				<a><h1 id="h.qlj761z2fff6" style='padding-top:24pt;margin:0;color:#000000;padding-left:0;font-size:20pt;padding-bottom:6pt;line-height:1.15;page-break-after:avoid;font-family:"Arial";orphans:2;widows:2;text-align:left;padding-right:0'><span style="font-size:23pt;font-style:italic;font-weight:700">Pseudo test driven development:</span></h1><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>Let me start my saying that I may be using a slightly loser definition of test, than a lot of people might be used to. Traditionally tests assert some truthiness to indicate if they have passed or failed, and when we test we run all the tests. Personally I find that this requirement can make test writing and using tests cumbersome, especially when you are writing front end features, where passing means &quot;looks good&quot; and failing means &quot;looks bad&quot;, and executing a test can fill up a display window.</span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>So what do we lose by testing without asserting? For those of you familiar with tests the answer seems obvious, if your tests don&#39;t assert the developer must manually inspect at run-time to ensure that the results match the expected for each test. Whereas if tests have truthiness these assertions can be aggregated and interrogated directly without the developer checking each test off of a list. Unfortunately though these sort of tests don&#39;t &nbsp;serve too well as sample code for using the methods that you have just developed, being all filled up by the assertion part!</span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>That takes us to what you gain by testing without assertion, and my personal workflow is as follows: </span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>&nbsp; &nbsp; *Decide What I&#39;m Doing -&gt; Code -&gt; WriteTest -&gt; runTest &lt;-&gt; Debug -&gt;*</span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>In this way tests are not built to spec but rather a built to demo newly built code. While it&rsquo;s been said that &ldquo;The only time that &lsquo;implementation&rsquo; comes before &lsquo;test&rsquo; is in the dictionary.&rdquo; writing post facto tests makes the purpose of your code more obvious because a test demonstrates a use-case and implementation without any additional anything. Therefor by reading these sort of tests you learn how to use the code. Secondly I will often neglect to run all my tests every time, instead opting to focus on one at a time, unless I edit code involved in a previous test. This keeps me focused and while the threat of bugs popping up mysteriously in old code is real, when I pay attention to where I am writing I find it doesn&#39;t often happen.</span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>So What does the classic test driven process look like and how does it differ? Let&#39;s take a look:</span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>&nbsp; &nbsp; *WriteTests -&gt; Code -&gt; runTests &lt;-&gt; Dubug -&gt; *</span></p><p style='padding:0;margin:0;color:#000000;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>Having the test first makes it more of a boundary and less of a frame for the code devs write. &nbsp;Notice the core of the process `Code -&gt; runTest &lt;-&gt; Dubug -&gt; *` remains the same. &nbsp;This is because, in my opinion, test cases are the only way to actually demonstrate and ensure that your code works.</span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='font-family:"Times New Roman"'>And at the end of the day, what else matters?</span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2;height:11pt'><span style='font-family:"Times New Roman"'></span></p><p style='padding:0;margin:0;color:#000000;text-indent:36pt;font-size:11pt;font-family:"Arial";orphans:2;widows:2'><span style='color:#8c68cb;font-family:"Times New Roman"'><a href="https://www.google.com/url?q=http://programmers.stackexchange.com/questions/182306/why-is-it-often-said-that-the-test-cases-need-to-be-made-before-we-start-coding&amp;sa=D&amp;ust=1472026309197000&amp;usg=AFQjCNFb8tkBrhk8OqlvnM-tExJjJm7BKA" style="color:inherit;text-decoration:inherit">For more on test driven development (without my personal spin).</a></span></p></a><br>
+			</div>
+		</div>
+		<script>
+			//start quote http://stackoverflow.com/questions/2481350/how-to-get-scrollbar-position-with-javascript
+			document.getScroll= function(){
+			 if(window.pageYOffset!= undefined){
+			  return [pageXOffset, pageYOffset];
+			 }
+			 else{
+			  let sx, sy, d= document, r= d.documentElement, b= d.body;
+			  sx= r.scrollLeft || b.scrollLeft || 0;
+			  sy= r.scrollTop || b.scrollTop || 0;
+			  return [sx, sy];
+			 }
+			}
+			//start quote http://stackoverflow.com/questions/1145850/how-to-get-height-of-entire-document-with-javascript
+			function docHeight(){
+				let body = document.body,
+				html = document.documentElement;
+				let height = Math.max( body.scrollHeight, body.offsetHeight, 
+				html.clientHeight, html.scrollHeight, html.offsetHeight );
+				return(height);
+			}
+			//start quote http://stackoverflow.com/questions/3437786/get-the-size-of-the-screen-current-web-page-and-browser-window
+			function wndsize(){
+			  let w = 0;var h = 0;
+			  //IE
+			  if(!window.innerWidth){
+			    if(!(document.documentElement.clientWidth == 0)){
+			      //strict mode
+			      w = document.documentElement.clientWidth;h = document.documentElement.clientHeight;
+			    } else{
+			      //quirks mode
+			      w = document.body.clientWidth;h = document.body.clientHeight;
+			    }
+			  } else {
+			    //w3c
+			    w = window.innerWidth;h = window.innerHeight;
+			  }
+			  return [w,h];
+			}
+			//end quote
+			let height = docHeight();
+			let windowHeight = wndsize()[1];			
+			let bg = document.getElementById('background');
+			function backgroundParallax(){
+				let pos = document.getScroll();
+				bg.style.top = String(parseInt((height-bg.clientHeight)*(pos[1]/(height-windowHeight)),10))+"px";
+				//alert(bg.clientHeight); //<-The height of the background
+				//alert(height);          //<-The height of the document
+				//alert(pos[1]);          //<-The height above the screen
+				//alert(windowHeight);    //<-The height of the window
+			}
+			function windowResize(){
+				bg.style.top = "0px";
+				windowHeight = wndsize()[1];
+				height = docHeight();
+				backgroundParallax();
+			}
+			window.onscroll = backgroundParallax;
+		</script>
+	</body>
+</html>
