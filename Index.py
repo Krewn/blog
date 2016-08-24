@@ -31,7 +31,7 @@ class indexer:
 		for i in images:
 			i = self.fprep(i)
 			ref = self.refPrep()
-			ret+= "<img src="+ref+"/"+i+">\n"
+			ret+= "<img src="+ref+"/"+i+"><br>\n"
 		folders = [f for f in os.listdir(".") if not os.path.isfile(f)]
 		for k in folders:
 			if(k.__contains__(".")):
